@@ -1,0 +1,6 @@
+framework module Pods_solariOSApp {
+  umbrella header "Pods-solariOSApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

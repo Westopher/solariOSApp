@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3DB26C63219728D700FA38EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB26C62219728D700FA38EF /* AppDelegate.swift */; };
-		3DB26C65219728D700FA38EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB26C64219728D700FA38EF /* ViewController.swift */; };
 		3DB26C68219728D700FA38EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB26C66219728D700FA38EF /* Main.storyboard */; };
 		3DB26C6A219728D900FA38EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB26C69219728D900FA38EF /* Assets.xcassets */; };
 		3DB26C6D219728D900FA38EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB26C6B219728D900FA38EF /* LaunchScreen.storyboard */; };
 		3DB26C75219A0ED800FA38EF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB26C74219A0ED800FA38EF /* LoginVC.swift */; };
+		D20248B56E8401F3BBEE5D85 /* Pods_solariOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ADDB71B5E7F831879F58 /* Pods_solariOSApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21B90700B1C3BA1A6E8DBCD3 /* Pods-solariOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solariOSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-solariOSApp/Pods-solariOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		3DB26C5F219728D700FA38EF /* solariOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solariOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB26C62219728D700FA38EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DB26C64219728D700FA38EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DB26C67219728D700FA38EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DB26C69219728D900FA38EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB26C6C219728D900FA38EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB26C6E219728D900FA38EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB26C74219A0ED800FA38EF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		52561AB4E76ABABAB98B117B /* Pods-solariOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solariOSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-solariOSApp/Pods-solariOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C191ADDB71B5E7F831879F58 /* Pods_solariOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_solariOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20248B56E8401F3BBEE5D85 /* Pods_solariOSApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				3DB26C61219728D700FA38EF /* solariOSApp */,
 				3DB26C60219728D700FA38EF /* Products */,
+				85BFB21643D4D066B7581382 /* Pods */,
+				97A41907D3EFC8B826D74BF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +65,6 @@
 				3DB26C77219A0F0000FA38EF /* View */,
 				3DB26C76219A0EF700FA38EF /* Model */,
 				3DB26C62219728D700FA38EF /* AppDelegate.swift */,
-				3DB26C64219728D700FA38EF /* ViewController.swift */,
 				3DB26C66219728D700FA38EF /* Main.storyboard */,
 				3DB26C69219728D900FA38EF /* Assets.xcassets */,
 				3DB26C6B219728D900FA38EF /* LaunchScreen.storyboard */,
@@ -91,6 +95,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		85BFB21643D4D066B7581382 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52561AB4E76ABABAB98B117B /* Pods-solariOSApp.debug.xcconfig */,
+				21B90700B1C3BA1A6E8DBCD3 /* Pods-solariOSApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97A41907D3EFC8B826D74BF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C191ADDB71B5E7F831879F58 /* Pods_solariOSApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DB26C71219728D900FA38EF /* Build configuration list for PBXNativeTarget "solariOSApp" */;
 			buildPhases = (
+				E92E6B7383E62F0E9CE583BC /* [CP] Check Pods Manifest.lock */,
 				3DB26C5B219728D700FA38EF /* Sources */,
 				3DB26C5C219728D700FA38EF /* Frameworks */,
 				3DB26C5D219728D700FA38EF /* Resources */,
@@ -157,12 +179,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E92E6B7383E62F0E9CE583BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-solariOSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DB26C5B219728D700FA38EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB26C65219728D700FA38EF /* ViewController.swift in Sources */,
 				3DB26C63219728D700FA38EF /* AppDelegate.swift in Sources */,
 				3DB26C75219A0ED800FA38EF /* LoginVC.swift in Sources */,
 			);
@@ -308,6 +350,7 @@
 		};
 		3DB26C72219728D900FA38EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52561AB4E76ABABAB98B117B /* Pods-solariOSApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +369,7 @@
 		};
 		3DB26C73219728D900FA38EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B90700B1C3BA1A6E8DBCD3 /* Pods-solariOSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
