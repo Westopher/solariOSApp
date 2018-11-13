@@ -11,4 +11,11 @@ import Foundation
 //"https://nysolariosapp.herokuapp.com"
 //API web requests go here
 
+//segue
 let TO_CREATE_ACCOUNT = "toCreateAccount"
+
+
+//user defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
