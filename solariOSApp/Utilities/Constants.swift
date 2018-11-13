@@ -8,5 +8,7 @@
 
 import Foundation
 
+//"https://nysolariosapp.herokuapp.com"
+//API web requests go here
 
 let TO_CREATE_ACCOUNT = "toCreateAccount"
