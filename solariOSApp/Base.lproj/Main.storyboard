@@ -79,6 +79,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Sign Up for a new account here."/>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="gdL-co-eEv" eventType="touchUpInside" id="qBh-F7-3SP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,7 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="VQ0-Lf-CZ2"/>
                     </view>
                     <connections>
-                        <segue destination="w3H-ST-4YQ" kind="show" id="TlK-mE-qj4"/>
+                        <segue destination="w3H-ST-4YQ" kind="show" identifier="toCreateAccount" id="TlK-mE-qj4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDJ-nP-XJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
