@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 
 class AuthService {
@@ -41,4 +42,8 @@ class AuthService {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
     }
+}
+
+func registerUser(email: String, password: String) {
+    
 }

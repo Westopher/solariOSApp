@@ -8,6 +8,9 @@
 
 import Foundation
 
+//completion handler
+typealias CompletionHandler = (_ Success: Bool) -> ()
+
 //"https://nysolariosapp.herokuapp.com"
 //API web requests go here
 
