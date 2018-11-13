@@ -11,6 +11,10 @@ import Foundation
 //completion handler
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
+//URL Constants
+let BASE_URL = "https://nysolariosapp.herokuapp.com/v1"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
 //"https://nysolariosapp.herokuapp.com"
 //API web requests go here
 

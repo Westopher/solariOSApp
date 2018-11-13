@@ -44,6 +44,16 @@ class AuthService {
     }
 }
 
-func registerUser(email: String, password: String) {
+func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
+    let lowerCaseEmail = email.lowercased()
+    let header = [
+        "Content-Type": "application/json; charset=utf-8"
+    ]
     
+    let bod: [String: Any] = [
+        "email": lowerCaseEmail,
+        "password": password
+    ]
+    
+    Alamofire.request(<#T##url: URLConvertible##URLConvertible#>, method: <#T##HTTPMethod#>, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
 }
