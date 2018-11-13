@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="188" y="149.77511244377811"/>
         </scene>
-        <!--View Controller-->
+        <!--New AccountVC-->
         <scene sceneID="U3W-F1-NPP">
             <objects>
-                <viewController id="w3H-ST-4YQ" sceneMemberID="viewController">
+                <viewController id="w3H-ST-4YQ" customClass="NewAccountVC" customModule="solariOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fIk-2T-Dk1"/>
                         <viewControllerLayoutGuide type="bottom" id="mdP-GN-GTX"/>
