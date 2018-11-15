@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2BF2B4219DDD6D00432BD6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BF2B3219DDD6D00432BD6 /* RoundedButton.swift */; };
 		3D5C2EA1219B4E27004C53A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C2EA0219B4E27004C53A6 /* Constants.swift */; };
 		3D5C2EA3219B4EA1004C53A6 /* NewAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C2EA2219B4EA1004C53A6 /* NewAccountVC.swift */; };
 		3D5C2EA6219B7367004C53A6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C2EA5219B7367004C53A6 /* AuthService.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		21B90700B1C3BA1A6E8DBCD3 /* Pods-solariOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solariOSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-solariOSApp/Pods-solariOSApp.release.xcconfig"; sourceTree = "<group>"; };
+		3D2BF2B3219DDD6D00432BD6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3D5C2EA0219B4E27004C53A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D5C2EA2219B4EA1004C53A6 /* NewAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountVC.swift; sourceTree = "<group>"; };
 		3D5C2EA5219B7367004C53A6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		3DB26C77219A0F0000FA38EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D2BF2B3219DDD6D00432BD6 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB26C63219728D700FA38EF /* AppDelegate.swift in Sources */,
+				3D2BF2B4219DDD6D00432BD6 /* RoundedButton.swift in Sources */,
 				3D5C2EA3219B4EA1004C53A6 /* NewAccountVC.swift in Sources */,
 				3D5C2EA6219B7367004C53A6 /* AuthService.swift in Sources */,
 				3DB26C75219A0ED800FA38EF /* LoginVC.swift in Sources */,
