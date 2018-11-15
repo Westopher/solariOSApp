@@ -42,7 +42,7 @@ class AuthService {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
     }
-}
+
 
 func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
     let lowerCaseEmail = email.lowercased()
@@ -63,4 +63,5 @@ func registerUser(email: String, password: String, completion: @escaping Complet
             debugPrint(response.result.error as Any)
         }
     }
+}
 }

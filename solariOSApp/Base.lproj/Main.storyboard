@@ -128,6 +128,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="w3H-ST-4YQ" eventType="touchUpInside" id="ugs-lU-eSW"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="24l-ys-PtC">
                                 <rect key="frame" x="62.5" y="181" width="250" height="136"/>
@@ -214,6 +217,11 @@
                             <constraint firstItem="daY-9L-BSC" firstAttribute="leading" secondItem="jGx-nQ-rvx" secondAttribute="leading" constant="20" id="eU1-tH-rez"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="kPv-WG-6UF" id="5LD-Yf-oFn"/>
+                        <outlet property="passwordTxt" destination="qyA-wx-qMX" id="QIx-vN-Pjz"/>
+                        <outlet property="userNameTxt" destination="7fc-Ln-InJ" id="BfJ-uN-KxR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCs-dO-8iW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
