@@ -10,8 +10,7 @@ import UIKit
 
 class NewAccountVC: UIViewController {
 
-    //Outlets
-    
+    //outlets
     @IBOutlet weak var userNameTxt: UITextField!
     
     @IBOutlet weak var emailTxt: UITextField!
@@ -24,12 +23,14 @@ class NewAccountVC: UIViewController {
         
         AuthService.instance.registerUser(email: email, password: password)
         {   (success) in
-            
             if success {
-                print("registered a user")
-            }
+                AuthService.instance.loginUser(email: email, password: password, completion: { (success) in
+                    if success {
+                        print("logged in user", AuthService.instance.authToken)
+                    }
+            })
         }
-        
+        }
     }
     
     override func viewDidLoad() {
