@@ -16,6 +16,7 @@
 		3DB26C6A219728D900FA38EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB26C69219728D900FA38EF /* Assets.xcassets */; };
 		3DB26C6D219728D900FA38EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB26C6B219728D900FA38EF /* LaunchScreen.storyboard */; };
 		3DB26C75219A0ED800FA38EF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB26C74219A0ED800FA38EF /* LoginVC.swift */; };
+		3DC15B44219F9152005807D1 /* LeadButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC15B43219F9152005807D1 /* LeadButtonVC.swift */; };
 		3DD21B54219F80D4006D0307 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD21B53219F80D4006D0307 /* UserDataService.swift */; };
 		D20248B56E8401F3BBEE5D85 /* Pods_solariOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ADDB71B5E7F831879F58 /* Pods_solariOSApp.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		3DB26C6C219728D900FA38EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB26C6E219728D900FA38EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB26C74219A0ED800FA38EF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3DC15B43219F9152005807D1 /* LeadButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadButtonVC.swift; sourceTree = "<group>"; };
 		3DD21B53219F80D4006D0307 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		52561AB4E76ABABAB98B117B /* Pods-solariOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solariOSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-solariOSApp/Pods-solariOSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C191ADDB71B5E7F831879F58 /* Pods_solariOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_solariOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				3DB26C74219A0ED800FA38EF /* LoginVC.swift */,
 				3D5C2EA2219B4EA1004C53A6 /* NewAccountVC.swift */,
+				3DC15B43219F9152005807D1 /* LeadButtonVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC15B44219F9152005807D1 /* LeadButtonVC.swift in Sources */,
 				3DB26C63219728D700FA38EF /* AppDelegate.swift in Sources */,
 				3D2BF2B4219DDD6D00432BD6 /* RoundedButton.swift in Sources */,
 				3DD21B54219F80D4006D0307 /* UserDataService.swift in Sources */,

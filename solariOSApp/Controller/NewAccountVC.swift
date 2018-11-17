@@ -33,7 +33,7 @@ class NewAccountVC: UIViewController {
                             { (success) in
                             if success {
                             print("user created")
-                            //self.performSegue(withIdentifier: UNWIND, sender: nil)
+                            self.performSegue(withIdentifier: UNWIND, sender: nil)
                             }
                         })
                     }

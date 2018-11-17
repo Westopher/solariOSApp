@@ -9,6 +9,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Lead ButtonVC-->
+        <scene sceneID="M86-EE-ODQ">
+            <objects>
+                <viewController id="xuE-OU-Nef" customClass="LeadButtonVC" customModule="solariOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AGt-Il-PdC"/>
+                        <viewControllerLayoutGuide type="bottom" id="UEa-ya-cWq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dGN-uP-0Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2U-5y-HnX">
+                                <rect key="frame" x="164" y="131" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-QK-Q3L">
+                                <rect key="frame" x="164" y="221" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yns-sJ-FQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="150"/>
+        </scene>
         <!--LogIn-->
         <scene sceneID="r8M-Lw-qzB">
             <objects>
@@ -231,6 +261,7 @@
                         <outlet property="emailTxt" destination="kPv-WG-6UF" id="5LD-Yf-oFn"/>
                         <outlet property="passwordTxt" destination="qyA-wx-qMX" id="QIx-vN-Pjz"/>
                         <outlet property="userNameTxt" destination="7fc-Ln-InJ" id="BfJ-uN-KxR"/>
+                        <segue destination="xuE-OU-Nef" kind="show" identifier="buttonsVC" id="QmP-uL-Oi0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCs-dO-8iW" userLabel="First Responder" sceneMemberID="firstResponder"/>
