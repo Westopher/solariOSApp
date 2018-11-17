@@ -21,18 +21,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2U-5y-HnX">
-                                <rect key="frame" x="164" y="131" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-QK-Q3L">
-                                <rect key="frame" x="164" y="221" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="Msu-Fp-vbg">
+                                <rect key="frame" x="62.5" y="184" width="250" height="199"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUO-jW-HLV" customClass="RoundedButton" customModule="solariOSApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="3HR-5k-PLL"/>
+                                            <constraint firstAttribute="height" constant="50" id="kGa-3Q-ar9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                        <state key="normal" title="Create New Lead">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrC-8N-4JJ" customClass="RoundedButton" customModule="solariOSApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="149" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VgH-MG-OEd"/>
+                                            <constraint firstAttribute="width" constant="250" id="uIL-Kt-XH4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                        <state key="normal" title="Upload Lead Media">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-Jm-Zk3">
+                                <rect key="frame" x="277" y="28" width="75" height="30"/>
+                                <state key="normal" title="Edit Profile"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6zl-Jm-Zk3" firstAttribute="top" secondItem="AGt-Il-PdC" secondAttribute="bottom" constant="8" id="Cn7-o5-nf4"/>
+                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="top" secondItem="6zl-Jm-Zk3" secondAttribute="bottom" constant="126" id="Uk2-EZ-ZIl"/>
+                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="tX8-eP-CEc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6zl-Jm-Zk3" secondAttribute="trailing" constant="7" id="yNW-GD-hUB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yns-sJ-FQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
