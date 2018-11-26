@@ -60,25 +60,28 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-Jm-Zk3">
-                                <rect key="frame" x="277" y="28" width="75" height="30"/>
-                                <state key="normal" title="Edit Profile"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-Wg-7a7">
                                 <rect key="frame" x="128.5" y="33" width="118.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-Jm-Zk3">
+                                <rect key="frame" x="274" y="617" width="81" height="30"/>
+                                <state key="normal" title="View Profile"/>
+                                <connections>
+                                    <action selector="viewProfilePressed:" destination="xuE-OU-Nef" eventType="touchUpInside" id="R12-Ad-VbT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6zl-Jm-Zk3" firstAttribute="top" secondItem="AGt-Il-PdC" secondAttribute="bottom" constant="8" id="Cn7-o5-nf4"/>
-                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="top" secondItem="6zl-Jm-Zk3" secondAttribute="bottom" constant="126" id="Uk2-EZ-ZIl"/>
+                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="eTS-VW-nJ8"/>
                             <constraint firstItem="eWl-Wg-7a7" firstAttribute="top" secondItem="AGt-Il-PdC" secondAttribute="bottom" constant="13" id="m8l-fH-MlH"/>
+                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="centerY" secondItem="dGN-uP-0Qc" secondAttribute="centerY" constant="-50" id="nrn-1T-KVI"/>
                             <constraint firstItem="eWl-Wg-7a7" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="tPm-Kz-Lro"/>
-                            <constraint firstItem="Msu-Fp-vbg" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="tX8-eP-CEc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6zl-Jm-Zk3" secondAttribute="trailing" constant="7" id="yNW-GD-hUB"/>
+                            <constraint firstAttribute="trailing" secondItem="6zl-Jm-Zk3" secondAttribute="trailing" constant="20" id="wUh-27-FKF"/>
+                            <constraint firstItem="UEa-ya-cWq" firstAttribute="top" secondItem="6zl-Jm-Zk3" secondAttribute="bottom" constant="20" id="xLA-Ph-jbI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -92,7 +95,7 @@
         <!--LogIn-->
         <scene sceneID="r8M-Lw-qzB">
             <objects>
-                <viewController id="gdL-co-eEv" userLabel="LogIn" customClass="LoginVC" customModule="solariOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="gdL-co-eEv" userLabel="LogIn" customClass="LoginVC" customModule="solariOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7KG-Hs-qSg"/>
                         <viewControllerLayoutGuide type="bottom" id="o5Y-zv-Tt8"/>

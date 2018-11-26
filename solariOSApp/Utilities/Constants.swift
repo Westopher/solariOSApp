@@ -28,6 +28,7 @@ let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 //segue
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "buttonsVC"
+let TO_LOGIN = "loginVC"
 
 
 //user defaults
