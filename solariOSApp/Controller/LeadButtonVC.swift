@@ -27,12 +27,7 @@ class LeadButtonVC: UIViewController {
     
     @IBAction func viewProfilePressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
-            let profile = ProfileVC()
-            profile.modalPresentationStyle = .custom
-            present(profile, animated: true, completion: nil)
-        } else {
-            performSegue(withIdentifier: TO_LOGIN, sender: nil)
-            print("could not transition to profile")
+            performSegue(withIdentifier: "profileSegue", sender: Any?.self)
         }
     }
     

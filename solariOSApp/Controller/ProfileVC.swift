@@ -11,9 +11,6 @@ import UIKit
 class ProfileVC: UIViewController {
 
     //iboutlets
-    
-//    @IBOutlet weak var userName: UILabel!
-//    @IBOutlet weak var email: UILabel!
 //    @IBOutlet weak var backgroundView: UIView!
     
     @IBOutlet weak var userName: UILabel!
@@ -25,15 +22,11 @@ class ProfileVC: UIViewController {
 
     }
     
-    //ibactions
-    @IBAction func logOutPressed(_ sender: Any) {
+    @IBAction func logoutPressed(_ sender: Any) {
         UserDataService.instance.logOutUser()
         NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         performSegue(withIdentifier: "tologin", sender: (Any).self)
-        
     }
-    
- 
     
     
     func setUpView() {
