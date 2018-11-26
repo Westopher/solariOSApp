@@ -19,6 +19,7 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
 
     }
     
@@ -27,9 +28,13 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func closeModalPressed(_ sender: Any) {
-
+        self.dismiss(animated: true, completion: nil)
     }
     
+    func setUpView() {
+        userName.text = UserDataService.instance.name
+        email.text = UserDataService.instance.email
+    }
     
 
 }
