@@ -12,10 +12,12 @@ class ProfileVC: UIViewController {
 
     //iboutlets
     
+//    @IBOutlet weak var userName: UILabel!
+//    @IBOutlet weak var email: UILabel!
+//    @IBOutlet weak var backgroundView: UIView!
+    
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var backgroundView: UIView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +29,12 @@ class ProfileVC: UIViewController {
     @IBAction func logOutPressed(_ sender: Any) {
         UserDataService.instance.logOutUser()
         NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "tologin", sender: (Any).self)
+        
     }
     
-    @IBAction func closeModalPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+ 
+    
     
     func setUpView() {
         userName.text = UserDataService.instance.name
