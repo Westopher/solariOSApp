@@ -64,15 +64,26 @@
                                 <rect key="frame" x="277" y="28" width="75" height="30"/>
                                 <state key="normal" title="Edit Profile"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-Wg-7a7">
+                                <rect key="frame" x="128.5" y="33" width="118.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6zl-Jm-Zk3" firstAttribute="top" secondItem="AGt-Il-PdC" secondAttribute="bottom" constant="8" id="Cn7-o5-nf4"/>
                             <constraint firstItem="Msu-Fp-vbg" firstAttribute="top" secondItem="6zl-Jm-Zk3" secondAttribute="bottom" constant="126" id="Uk2-EZ-ZIl"/>
+                            <constraint firstItem="eWl-Wg-7a7" firstAttribute="top" secondItem="AGt-Il-PdC" secondAttribute="bottom" constant="13" id="m8l-fH-MlH"/>
+                            <constraint firstItem="eWl-Wg-7a7" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="tPm-Kz-Lro"/>
                             <constraint firstItem="Msu-Fp-vbg" firstAttribute="centerX" secondItem="dGN-uP-0Qc" secondAttribute="centerX" id="tX8-eP-CEc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6zl-Jm-Zk3" secondAttribute="trailing" constant="7" id="yNW-GD-hUB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logInIndicator" destination="eWl-Wg-7a7" id="WrF-wa-2ID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yns-sJ-FQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,6 +117,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="gdL-co-eEv" eventType="touchUpInside" id="K2Q-6N-Dzr"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ulq-MR-oLr">
                                 <rect key="frame" x="62.5" y="170" width="250" height="86"/>
@@ -160,6 +174,10 @@
                                     <action selector="createAccountBtnPressed:" destination="gdL-co-eEv" eventType="touchUpInside" id="qBh-F7-3SP"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-Rj-a0g">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -168,10 +186,15 @@
                             <constraint firstItem="ulq-MR-oLr" firstAttribute="top" secondItem="7KG-Hs-qSg" secondAttribute="bottom" constant="150" id="TYa-WQ-MkS"/>
                             <constraint firstItem="Itd-qI-AG9" firstAttribute="centerX" secondItem="XVm-8f-Dp0" secondAttribute="centerX" id="bmi-cJ-rgN"/>
                             <constraint firstItem="yfP-At-5O1" firstAttribute="top" secondItem="Itd-qI-AG9" secondAttribute="bottom" id="eWp-6p-If4"/>
+                            <constraint firstItem="4uc-Rj-a0g" firstAttribute="centerY" secondItem="XVm-8f-Dp0" secondAttribute="centerY" constant="-100" id="pRu-Oo-VAi"/>
+                            <constraint firstItem="4uc-Rj-a0g" firstAttribute="centerX" secondItem="XVm-8f-Dp0" secondAttribute="centerX" id="v4j-Bl-AN6"/>
                             <constraint firstItem="Itd-qI-AG9" firstAttribute="top" secondItem="ulq-MR-oLr" secondAttribute="bottom" constant="40" id="zrh-7F-rdr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="9Z0-8U-pVV" id="Gk2-Vc-Wwz"/>
+                        <outlet property="spinner" destination="4uc-Rj-a0g" id="reV-Bp-zGQ"/>
+                        <outlet property="userNameTxt" destination="YnX-0t-ADK" id="RGo-8r-eXO"/>
                         <segue destination="w3H-ST-4YQ" kind="show" identifier="toCreateAccount" id="TlK-mE-qj4"/>
                     </connections>
                 </viewController>
@@ -283,11 +306,17 @@
                                     <segue destination="gdL-co-eEv" kind="show" id="orO-Kc-R0i"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qkb-Ph-yGe">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8G8-yW-Q2Z" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="3g3-zO-RrI"/>
                             <constraint firstItem="24l-ys-PtC" firstAttribute="top" secondItem="X5F-g5-hJx" secondAttribute="bottom" constant="57" id="6hk-pd-tHL"/>
+                            <constraint firstItem="qkb-Ph-yGe" firstAttribute="centerY" secondItem="jGx-nQ-rvx" secondAttribute="centerY" constant="-100" id="AkR-g3-qNI"/>
+                            <constraint firstItem="qkb-Ph-yGe" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="Bwn-HI-cdg"/>
                             <constraint firstItem="X5F-g5-hJx" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="HdA-uD-0Jh"/>
                             <constraint firstItem="24l-ys-PtC" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="Nvu-JZ-GY9"/>
                             <constraint firstItem="daY-9L-BSC" firstAttribute="top" secondItem="fIk-2T-Dk1" secondAttribute="bottom" constant="16" id="a9g-T0-scP"/>
@@ -299,6 +328,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="kPv-WG-6UF" id="5LD-Yf-oFn"/>
                         <outlet property="passwordTxt" destination="qyA-wx-qMX" id="QIx-vN-Pjz"/>
+                        <outlet property="spinner" destination="qkb-Ph-yGe" id="hXJ-PG-GAE"/>
                         <outlet property="userNameTxt" destination="7fc-Ln-InJ" id="BfJ-uN-KxR"/>
                         <segue destination="xuE-OU-Nef" kind="show" identifier="buttonsVC" id="QmP-uL-Oi0"/>
                     </connections>

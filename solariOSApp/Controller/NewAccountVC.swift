@@ -14,12 +14,21 @@ class NewAccountVC: UIViewController {
     @IBOutlet weak var userNameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     //variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpView()
+    }
+    
     @IBAction func createAccountPressed(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard let name = userNameTxt.text , userNameTxt.text != "" else { return }
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let password = passwordTxt.text , passwordTxt.text != "" else { return }
@@ -33,8 +42,11 @@ class NewAccountVC: UIViewController {
                             { (success) in
                             if success {
                             print("user created")
+                            self.spinner.isHidden = true
+                            self.spinner.stopAnimating()
                             self.performSegue(withIdentifier: UNWIND, sender: nil)
                             }
+                            NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                         })
                     }
             })
@@ -42,10 +54,24 @@ class NewAccountVC: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    func setUpView() {
+        spinner.isHidden = true
+        userNameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor:placeHolder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedString.Key.foregroundColor:placeHolder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor:placeHolder])
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(NewAccountVC.handleTap))
+        view.addGestureRecognizer(tap)
     }
     
-
+    @objc func handleTap() {
+            view.endEditing(true)
+        }
+    
+    
 }
+    
+   
+    
+
+

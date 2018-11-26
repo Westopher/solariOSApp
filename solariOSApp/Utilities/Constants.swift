@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //completion handler
 typealias CompletionHandler = (_ Success: Bool) -> ()
@@ -18,8 +19,11 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
-//"https://nysolariosapp.herokuapp.com"
-//API web requests go here
+//colors
+let placeHolder = #colorLiteral(red: 0.3619792461, green: 0.5534585714, blue: 0.9352012277, alpha: 0.5)
+
+//notification constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 //segue
 let TO_CREATE_ACCOUNT = "toCreateAccount"
