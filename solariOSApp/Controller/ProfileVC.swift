@@ -25,6 +25,9 @@ class ProfileVC: UIViewController {
     
     //ibactions
     @IBAction func logOutPressed(_ sender: Any) {
+        UserDataService.instance.logOutUser()
+        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeModalPressed(_ sender: Any) {

@@ -15,6 +15,7 @@ class NewAccountVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var inputFieldWarning: UILabel!
     
     //variables
     var avatarName = "profileDefault"
@@ -29,9 +30,24 @@ class NewAccountVC: UIViewController {
         spinner.isHidden = false
         spinner.startAnimating()
         
-        guard let name = userNameTxt.text , userNameTxt.text != "" else { return }
-        guard let email = emailTxt.text , emailTxt.text != "" else { return }
-        guard let password = passwordTxt.text , passwordTxt.text != "" else { return }
+        guard let name = userNameTxt.text , userNameTxt.text != "" else {
+            self.spinner.stopAnimating()
+            self.spinner.isHidden = true
+            inputFieldWarning.isHidden = false
+            return
+        }
+        guard let email = emailTxt.text , emailTxt.text != "" else {
+            self.spinner.stopAnimating()
+            self.spinner.isHidden = true
+            inputFieldWarning.isHidden = false
+            return
+        }
+        guard let password = passwordTxt.text , passwordTxt.text != "" else {
+            self.spinner.stopAnimating()
+            self.spinner.isHidden = true
+            inputFieldWarning.isHidden = false
+            return
+        }
         
         AuthService.instance.registerUser(email: email, password: password)
         {   (success) in
@@ -50,7 +66,8 @@ class NewAccountVC: UIViewController {
                         })
                     }
             })
-        }
+            }
+            
         }
     }
     

@@ -313,6 +313,19 @@
                                 <rect key="frame" x="169" y="215" width="37" height="37"/>
                                 <color key="color" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Input All Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG3-aS-nyg">
+                                <rect key="frame" x="91.5" y="152" width="192.5" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.81294978839999998" green="0.22830250050000001" blue="0.13666471999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Input All Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-8v-XdD">
+                                <rect key="frame" x="91" y="152" width="192.5" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.81294978839999998" green="0.22830250050000001" blue="0.13666471999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -321,15 +334,18 @@
                             <constraint firstItem="qkb-Ph-yGe" firstAttribute="centerY" secondItem="jGx-nQ-rvx" secondAttribute="centerY" constant="-100" id="AkR-g3-qNI"/>
                             <constraint firstItem="qkb-Ph-yGe" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="Bwn-HI-cdg"/>
                             <constraint firstItem="X5F-g5-hJx" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="HdA-uD-0Jh"/>
+                            <constraint firstItem="24l-ys-PtC" firstAttribute="top" secondItem="sG3-aS-nyg" secondAttribute="bottom" constant="4" id="Mtd-LS-d77"/>
                             <constraint firstItem="24l-ys-PtC" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="Nvu-JZ-GY9"/>
                             <constraint firstItem="daY-9L-BSC" firstAttribute="top" secondItem="fIk-2T-Dk1" secondAttribute="bottom" constant="16" id="a9g-T0-scP"/>
                             <constraint firstItem="8G8-yW-Q2Z" firstAttribute="top" secondItem="24l-ys-PtC" secondAttribute="bottom" constant="20" id="aNu-LX-pgR"/>
                             <constraint firstItem="X5F-g5-hJx" firstAttribute="top" secondItem="fIk-2T-Dk1" secondAttribute="bottom" constant="80" id="bL5-aT-HnQ"/>
                             <constraint firstItem="daY-9L-BSC" firstAttribute="leading" secondItem="jGx-nQ-rvx" secondAttribute="leading" constant="20" id="eU1-tH-rez"/>
+                            <constraint firstItem="sG3-aS-nyg" firstAttribute="centerX" secondItem="jGx-nQ-rvx" secondAttribute="centerX" id="p5D-l5-NEV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTxt" destination="kPv-WG-6UF" id="5LD-Yf-oFn"/>
+                        <outlet property="inputFieldWarning" destination="1Hh-8v-XdD" id="15s-Fw-bHB"/>
                         <outlet property="passwordTxt" destination="qyA-wx-qMX" id="QIx-vN-Pjz"/>
                         <outlet property="spinner" destination="qkb-Ph-yGe" id="hXJ-PG-GAE"/>
                         <outlet property="userNameTxt" destination="7fc-Ln-InJ" id="BfJ-uN-KxR"/>

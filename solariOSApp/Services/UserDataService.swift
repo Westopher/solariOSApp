@@ -26,8 +26,19 @@ class UserDataService {
         self.name = name
         
     }
+
+    func logOutUser() {
+        id = ""
+        avatarName = ""
+        avatarColor = ""
+        email = ""
+        name = ""
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
+    }
     
-//    func setAvatarName(avatarName: String) {
-//        self.avatarName
-//    }
+    
+    
+    
 }
