@@ -15,7 +15,13 @@ class LeadButtonVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(LeadButtonVC.userDataDidChange), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-        
+       
+        let delayInSeconds = 10.0
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            
+            self.logInIndicator.isHidden = true
+            
+        }
     }
     
     
