@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="solariOSApp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="u13-DA-LfE" id="UKm-Mp-Xyp"/>
+                <outlet property="email" destination="lZx-nS-0nz" id="2L7-FR-BpJ"/>
+                <outlet property="userName" destination="oHD-Pa-xuV" id="GWw-OW-OmM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u13-DA-LfE">
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u13-DA-LfE" userLabel="bgView">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
@@ -32,6 +35,9 @@
                             <state key="normal" title="Log Out">
                                 <color key="titleColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="logOutPressed:" destination="-1" eventType="touchUpInside" id="qF6-5T-gqD"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="eNU-xK-Xg3">
                             <rect key="frame" x="30" y="116" width="314" height="128"/>
@@ -62,6 +68,9 @@
                             <state key="normal" title="Close">
                                 <color key="titleColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="k8L-PA-Ubd"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.81575155258178711" green="0.92036575078964233" blue="0.95340782403945923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

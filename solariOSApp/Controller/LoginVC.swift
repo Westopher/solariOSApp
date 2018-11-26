@@ -30,18 +30,18 @@ class LoginVC: UIViewController {
         guard let email = userNameTxt.text , userNameTxt.text != "" else { return }
         guard let password = passwordTxt.text , passwordTxt.text != "" else { return }
         
-        AuthService.instance.loginUser(email: email, password: password, completion: { (success) in
-        if success {
-            AuthService.instance.findUserByEmail { (success) in
-                if success {
-                    NotificationCenter.default.post(NOTIF_USER_DATA_DID_CHANGE, object: nil)
-                }
-            }
-            }
-        })
+//        AuthService.instance.loginUser(email: email, password: password, completion: { (success) in
+//        if success {
+//            AuthService.instance.findUserByEmail { (success) in
+//                if success {
+//                    NotificationCenter.default.post(NOTIF_USER_DATA_DID_CHANGE, object: nil)
+//                }
+//            }
+//            }
+//        })
+//    }
+    
     }
-    
-    
     
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
