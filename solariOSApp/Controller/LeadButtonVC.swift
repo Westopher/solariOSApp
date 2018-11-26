@@ -20,6 +20,8 @@ class LeadButtonVC: UIViewController {
     @objc func userDataDidChange(_ notif: Notification) {
         if AuthService.instance.isLoggedIn {
             logInIndicator.text = "Logged In Successfully"
+        } else {
+            print("not logged in succesfully")
         }
     }
     
